@@ -17,9 +17,5 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: Set up Git
-      run: |
-        git config --local user.name "${GITHUB_ACTOR}"
-        git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
     - name: Bump tag if necessary
       uses: smlx/ccv@v0.10.0
